@@ -1,0 +1,5 @@
+# docker build -t "dishmael/alpine-golang" -f alpine-Dockerfile .
+FROM alpine:latest
+
+RUN apk update
+RUN apk add go
