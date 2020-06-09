@@ -6,7 +6,7 @@ services:
         environment:
             - http.host=0.0.0.0
             - 'ES_JAVA_OPTS=-Xms64m -Xmx128m'
-        image: elasticsearch
+        image: elasticsearch:7.7.1
     graylog:
         links:
             - mongo
